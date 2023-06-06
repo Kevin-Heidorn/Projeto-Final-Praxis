@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="./assets/cardapio.css">
     
     <title>Cardápios - Tropicalia</title>
 </head>
@@ -23,10 +24,157 @@
                 <a class="nav__link" href="./cadastro.html">CADASTRE-SE</a>
             </div>
         </nav>
+
+        <nav class="menu-nav horizontal-padding__menu-nav">
+
+            <!-- scroll para o penúltimo elemento de cada produto do site -->
+            <a class="menu-nav__link" href="#combos-promocionais">Combos Promocionais</a>
+            <a class="menu-nav__link" href="#para-familia">Para Família</a>
+            <a class="menu-nav__link" href="#individual">Individual</a>
+            <a class="menu-nav__link" href="#bebidas">Bebidas</a>
+
+        </nav>
+        <div id="combos-promocionais"></div>
     </header>
 
-    <!-- espaço para testar o footer -->
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <!-- r-menu é o cardápio (restaurant menu = cardápio de restaurante)
+    fiz isso pra não confundir menu com a aba de opções -->
+    <section class="r-menu r-menu__bg">
+        <div class="r-menu__padding">
+            
+            <div class="r-menu__grid-index">
+                <h2 class="r-menu__grid-index-h2-1"> Combos Promocionais </h2>
+                <div class="r-menu__grid-index-hr"></div>
+            </div>
+            <section class="r-menu__4grid">
+                <!-- 1ª grid: combos promocionais -->
+                
+                <div>
+                    <img class="dish__img" src="./assets/images/cardapio/moqueca-camarao.png" alt="Imagem de Moqueca de Camarão">
+                    <p class="dish__name">Moqueca de camarão<br>(2 pessoas)</p>
+                    <p class="dish__desc">Moqueca de camarão feita com azeite de dendê, acompanha farofa, arroz e caldo de peixe</p>
+                    <p class="dish__price">R$95,00</p>
+                </div>            
+                
+                <div class="r-menu__grid-div"></div>
+                
+                <div>
+                    <img class="dish__img" src="./assets/images/cardapio/salmao-a-la-carte.png" alt="Imagem de Salmão à la carte">
+                    <p class="dish__name">Salmão à la carte<br>(1 pessoa)</p>
+                    <p class="dish__desc">Pedaços de salmão com batata-palha, alho-poró e azeitona</p>
+                    <p class="dish__price">R$35,00</p>
+                </div>
+
+                <div>
+                    <img class="dish__img" src="./assets/images/cardapio/ostras.png" alt="Imagem de Ostras">
+                    <p class="dish__name">Ostras <br>(2 pessoas)</p>
+                    <p class="dish__desc">6 peças de ostras temperadas refogadas na manteiga e no alho.</p>
+                    <p class="dish__price">R$85,90</p>
+                </div>
+
+                <div class="r-menu__grid-div"></div>
+
+                <div>
+                    <img class="dish__img" src="./assets/images/cardapio/camarao-milanesa.png" alt="Imagem de Moqueca de Camarão">
+                    <p class="dish__name">Camarão à milanesa<br>(3 pessoas)</p>
+                    <p  id="para-familia" class="dish__desc">Camarão à milanesa (18 g / und) com gergelim. Acompanha molho tártaro. (270g)</p>
+                    <p class="dish__price">R$25,00</p>
+                </div>
+            </section>
+
+            <div class="r-menu__grid-index">
+                <h2 class="r-menu__grid-index-h2-2"> Para Família </h2>
+                <div class="r-menu__grid-index-hr"></div>
+            </div>
+            <section class="r-menu__2grid">
+                <!-- 2ª grid: para familia -->
+                
+                <div>
+                    <img class="dish__img" src="./assets/images/cardapio/peixe-dourado.png" alt="Imagem de Filé de Peixe">
+                    <p class="dish__name">Peixe Dourado<br>(Porção Família)</p>
+                    <p class="dish__desc">Filé de peixe ao forno com leve molho amanteigado. Acompanha batatas ao forno e arroz c/ manjericão. (900g)</p>
+                    <p class="dish__price">R$139,00</p>
+                </div>
+                
+                <div class="r-menu__grid-div"></div>
+                
+                <div>
+                    <img class="dish__img" src="./assets/images/cardapio/lagosta-defumada.png" alt="Imagem de Lagosta Defumada">
+                    <p class="dish__name">Lagosta Defumada<br>(Porção Família)</p>
+                    <p id="individual" class="dish__desc">Lagosta refogada no alho, limão. Acompanhada por batata e tomate seco (1500g)</p>
+                    <p class="dish__price">R$190,00</p>
+                </div>
+            </section>
+
+            <div class="r-menu__grid-index">
+                <h2 class="r-menu__grid-index-h2-1"> Individual </h2>
+                <div class="r-menu__grid-index-hr"></div>
+            </div>
+            <section class="r-menu__2grid">
+                <!-- 3ª grid: individual -->
+                
+                <div>
+                    <img class="dish__img" src="./assets/images/cardapio/peixe-dourado.png" alt="Imagem de Filé de Peixe">
+                    <p class="dish__name">Sopa de camarão<br>(1 pessoa)</p>
+                    <p class="dish__desc">Caldo com camarões, alho, cebola, coentro, pimentões, pimenta de cheiro mandioquinha e leite de coco</p>
+                    <p class="dish__price">R$35,00</p>
+                </div>
+                
+                <div class="r-menu__grid-div"></div>
+                
+                <div>
+                    <img class="dish__img" src="./assets/images/cardapio/lagosta-defumada.png" alt="Imagem de Lagosta Defumada">
+                    <p class="dish__name">salmao-a-la-carte<br>(1 pessoa)</p>
+                    <p id="bebidas" class="dish__desc">Pedaços de salmão com batata-palha, alho-poró e azeitona</p>
+                    <p class="dish__price">R$35,00</p>
+                </div>
+            </section>
+            
+
+            <div class="r-menu__grid-index">
+                <h2 class="r-menu__grid-index-h2-2"> Bebidas </h2>
+                <div class="r-menu__grid-index-hr"></div>
+            </div>
+            <section class="r-menu__4grid">
+                <!-- 4ª grid: bebidas -->
+                
+                <div>
+                    <img class="dish__img" src="./assets/images/cardapio/moqueca-camarao.png" alt="Imagem de Moqueca de Camarão">
+                    <p class="dish__name">Dry Martini</p>
+                    <p class="dish__desc">Martini puro, azeitonas (90ml)</p>
+                    <p class="dish__price">R$12,95</p>
+                </div>            
+                
+                <div class="r-menu__grid-div"></div>
+                
+                <div>
+                    <img class="dish__img" src="./assets/images/cardapio/salmao-a-la-carte.png" alt="Imagem de Salmão à la carte">
+                    <p class="dish__name">Rio Vermelho</p>
+                    <p class="dish__desc">Vodka, suco de morango, licor, maçã caramelizada e seca. (150ml)</p>
+                    <p class="dish__price">R$14,65</p>
+                </div>
+
+                <div>
+                    <img class="dish__img" src="./assets/images/cardapio/ostras.png" alt="Imagem de Ostras">
+                    <p class="dish__name">Piña Colada</p>
+                    <p class="dish__desc">Rum, dose de leite de coco, suco de abacaxi, açúcar (170ml)</p>
+                    <p class="dish__price">R$15,90</p>
+                </div>
+
+                <div class="r-menu__grid-div"></div>
+
+                <div>
+                    <img class="dish__img" src="./assets/images/cardapio/camarao-milanesa.png" alt="Imagem de Moqueca de Camarão">
+                    <p class="dish__name">Onda Amarela</p>
+                    <p class="dish__desc">Whisky com suco e raspas da laranja, polpa do limão. (150ml)
+                    </p>
+                    <p class="dish__price">R$17,90</p>
+                </div>
+            </section>
+
+        </div>
+
+    </section>
 
     <footer class="horizontal_padding">
         <div class="footer__sup-row">
@@ -40,7 +188,7 @@
             
             <div class="footer__text">
                 <img src="./assets/images/footer/phone-icon.png" alt="Ícone do Telefone">
-                (71) 3639-2671
+                <p>(71) 3639-2671</p>
             </div>
 
         </div>
