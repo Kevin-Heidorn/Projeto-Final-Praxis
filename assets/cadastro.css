@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "Inria Sans";
+    src: url(./font/InriaSans-Regular.ttf);
+}
+@font-face {
+    font-family: "Inria Sans";
+    src: url(./font/InriaSans-Bold.ttf);
+    font-weight: bold;
+}
+
+body{
+    background-image: url(./images/cadastro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1{
+    color: white;
+    font-size: 5rem;
+}
+
+.finished-sign-up{
+  margin-top: calc(var(--nav-height) * 2);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+}
+
+.top-text{
+    color: #ffffff;
+    font-size: 4rem;
+  width: 710px;
+}
+
+.sign-up__phrase{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  align-self: center;
+}
+
+
+.cadastro_linha{ 
+  border: 1px solid var(--color-white-100);
+  width: 100%;
+}
+
+.color__frase{
+    color: #FF7A00;
+}
+
+
+.form__grouping {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.input__grouping{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 20px;
+}
+
+
+
+
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    font-size: 16px;
+  }
+  
+  .form-group input[type="submit"] {
+    background-color: #4A1F08;
+    color: #FED774;
+    cursor: pointer;
+    width: 213px;
+    height: 65px;
+    font-family: "Inria Sans";
+    src: url(./font/InriaSans-Bold.ttf);
+    font-weight: bold;
+    font-size: 2rem;
+    }
+  
+  
+  .form-group input[type="submit"]:hover {
+    background-color: #793009;
+  }
+
+input::placeholder,
+ textarea::placeholder {
+ font-family: "Inria Sans";
+src: url(./font/InriaSans-Bold.ttf);
+font-weight: bold;
+color: #000000}
+
