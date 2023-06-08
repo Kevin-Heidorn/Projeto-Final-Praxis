@@ -31,7 +31,7 @@ h1{
 .top-text{
     color: #ffffff;
     font-size: 4rem;
-  width: 710px;
+  width: 100%;
 }
 
 .sign-up__phrase{
@@ -110,3 +110,48 @@ src: url(./font/InriaSans-Bold.ttf);
 font-weight: bold;
 color: #000000}
 
+
+
+
+/* vvv  responsividade  vvv */
+/*1100px, 600px*/
+
+@media(max-width: 1100px){
+  .top-text{
+    font-size: 3rem;
+  }
+
+  h1{
+    font-size: 4rem;
+  }
+}
+
+@media(max-width: 600px){ 
+  .finished-sign-up{
+    margin-top: var(--nav-height);
+    flex-direction: column;
+    justify-items: center;
+    gap: 10px;
+    
+  }
+
+  .input__grouping{
+    gap: 10px;
+  }
+
+  .form-group input{
+    height: 70px;
+    font-size: 1.5rem;
+
+  }
+
+  .form-group input[type="submit"] {
+    width: 200px;
+    height: 65px;
+
+  }
+
+  .top-text{
+    font-size: 2.2rem;
+  }
+}

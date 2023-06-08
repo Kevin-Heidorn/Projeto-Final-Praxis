@@ -25,3 +25,29 @@ h1{
     gap: 100px;
     margin-bottom: 201px;
 }
+
+
+/* vvv  responsividade  vvv */
+@media(max-width: 1090px){
+    h1{
+        width: 65%;
+    }
+}
+
+@media(max-width: 1010px){
+    h1{
+        width: 100%;
+    }
+}
+
+@media(max-width: 880px){
+    h1{
+        font-size: 3rem;
+    }
+}
+
+@media(max-width: 500px){
+    h1{
+        font-size: 2rem;
+    }
+}
