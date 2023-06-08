@@ -6,29 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="./assets/stylessobrenós.css">
     
     <title>Sobre nós - Tropicalia</title>
 </head>
 <body>
-    <header>
-        <nav class="nav horizontal_padding">
-            <div class="nav__logo">
-                <img class="nav__img" src="./assets/images/site-logo.png" alt="Logo do site">
-                <a class="nav__img-name" href="./index.html">TROPICALIA</a>
-            </div>
-    
-            <div class="nav__bar">
-                <a class="nav__link" href="./cardapio.html">CARDÁPIO</a>
-                <a class="nav__link" href="./sobre-nos.html">SOBRE NÓS</a>
-                <a class="nav__link" href="./cadastro.html">FAÇA A SUA RESERVA</a>
-            </div>
+    <header class="nav horizontal_padding">
+        <div class="nav__logo">
+            <img class="nav__img" src="./assets/images/site-logo.png" alt="Logo do site">
+            <a class="nav__img-name" href="./index.html">TROPICALIA</a>
+        </div>
+
+        <nav class="nav__bar">
+            <a class="nav__link" href="./cardapio.html">CARDÁPIOS</a>
+            <a class="nav__link" href="./sobre-nos.html">SOBRE NÓS</a>
+            <a class="nav__link" href="./cadastro.html">CADASTRE-SE</a>
         </nav>
+    
     </header>
+    
 
-    <!-- espaço para testar o footer -->
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+ <!-- main é o "corpo" do site, a navbar e o footer ficam fora -->
+    <main class="horizontal_padding" >
+        
+        <h1 class="tittle">
+            Sobre nós           
+        </h1>
+        <br>
+        <hr class="tittle_hr">
 
-    <footer class="horizontal_padding">
+
+     <!-- fundadores -->    
+
+    <section class="founders">
+        <h2 class="tittle_founders">
+            Fundadores
+        </h2>
+
+        <div class="img_founders">
+            <img align="left"  src="./assets/images/sobrenos/stephanie-liverani-DiA1DpZyOmM-unsplash 1.png" alt="img founders">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in vehicula odio. Nam elementum suscipit eros, vitae fringilla leo posuere in. Aliquam sagittis dignissim diam vitae molestie. Nam porta fringilla aliquam. Donec lacinia, sem tempor blandit efficitur, enim purus tincidunt lorem, aliquam tempor neque diam ut lorem. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p> 
+        </div>
+    </section>
+
+    <!-- local -->
+
+    <section class="local">
+        <h2 class="tittle_local">
+            Local
+    </h2>    
+    
+    <div class="img_local">
+        <img align="left"  src="./assets/images/sobrenos/img local.png" alt="img local">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in vehicula odio. Nam elementum suscipit eros, vitae fringilla leo posuere in. Aliquam sagittis dignissim diam vitae molestie. Nam porta fringilla aliquam. Donec lacinia, sem tempor blandit efficitur, enim purus tincidunt lorem, aliquam tempor neque diam ut lorem. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p> 
+        
+    </div>
+    </section>
+
+     <!-- missão -->
+
+    <section class="mission">
+        <h2 class="tittle_mission">
+            Missão
+    </h2>    
+    
+    <div class="img_mission">
+        <img align="left"  src="./assets/images/sobrenos/img missão.png" alt="img local">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in vehicula odio. Nam elementum suscipit eros, vitae fringilla leo posuere in. Aliquam sagittis dignissim diam vitae molestie. Nam porta fringilla aliquam. Donec lacinia, sem tempor blandit efficitur, enim purus tincidunt lorem, aliquam tempor neque diam ut lorem. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p> 
+        
+    </div>
+    </section>
+    
+        
+    </main>
+
+     <!-- DEPOIS que termina o main, começa o footer -->
+
+     <footer class="horizontal_padding">
         <div class="footer__sup-row">
             <img class="footer__img" src="./assets/images/site-logo.png" alt="Logo do site">
 
@@ -39,7 +93,7 @@
             </div>
             
             <div class="footer__text">
-                <img src="./assets/images/footer/phone-icon.png" alt="Ícone do Telefone">
+                <img class="footer__icon" src="./assets/images/footer/phone-icon.png" alt="Ícone do Telefone">
                 (71) 3639-2671
             </div>
 
@@ -47,7 +101,7 @@
 
         <div class="footer__inf-row">
             <hr class="footer__hr">
-            <p style="font-size: 1rem;">Copyright © 2023 Tropicalia - Todos os direitos reservados</p>
+            <p class="footer__cp">Copyright © 2023 Tropicalia - Todos os direitos reservados</p>
         </div>
     </footer>
 </body>

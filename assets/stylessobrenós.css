@@ -1,0 +1,184 @@
+@font-face {
+    font-family: "Inria Sans";
+    src: url(./font/InriaSans-Regular.ttf);
+}
+@font-face {
+    font-family: "Inria Sans";
+    src: url(./font/InriaSans-Bold.ttf);
+    font-weight: bold;
+}
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+    /* font-size: 62.5%; */
+    font-family: "Inria Sans", sans-serif;
+    color: var(--color-brown-700);
+    font-weight: 400;
+}
+
+/* variáveis aqui globais aqui */
+:root{
+    --color-brown-700:#4A1F08;
+    --color-brown-900:#2D1305;
+
+    --color-yellow-300:#FFC700;
+    --color-yellow-500:#FED774;
+
+    --color-blue-500:#24A9E1;
+
+    --color-white-100:#FFFFFF;
+    
+    --horizontal-padding: calc((100vw - 1200px) / 2);
+    --nav-height:90px;
+    --footer-height:160px;
+
+    --font-text: 1.5rem;
+    --font-h1:2.25rem;
+}
+
+
+
+/* mudei o tamanho da fonte, por que achei a outra muito pequena... pode trocar se quiser*/
+.tittle{
+    font-size: 3.25rem;
+    margin-top: var(--nav-height);
+    padding-top: 100px;
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-start
+    
+}
+
+.tittle_hr{
+    
+    margin-left: 245px;
+    width: 700px;
+    border: 1px solid var(--color-brown-700);  
+    
+}
+
+
+/* imagem de fundo */
+body{
+    
+    background-image: url(./images/sobrenos/fundo\ com\ blur.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+       
+}
+
+/* configuração dos argumentos em <p></p> */
+p{
+    margin-left: 50px;
+    font-size: 1.5rem;
+    color:#2D1305;;
+}
+
+/* Css fundadores */
+.founders{
+   margin-top: 200px;
+}
+
+
+.tittle_founders{
+    font-size: 2.50rem;
+    
+}
+
+
+.img_founders{
+    padding-top: 50px;
+    display: flex;
+    
+}
+
+
+/* Css local */
+
+.local{
+     margin-top: 400px;
+}
+
+.tittle_local{
+ font-size: 2.50rem;
+
+}
+
+.img_local{
+    padding-top: 50px;
+    display: flex;
+    
+}
+
+/* Css missão */
+.mission{
+    margin-top: 400px;
+}
+
+.tittle_mission{
+font-size: 2.50rem;
+
+}
+
+.img_mission{
+   padding-top: 50px;
+   display: flex;
+   
+}
+
+/* Css footer */
+
+.footer__sup-row{
+    margin-top: 45px;
+
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    height: fit-content;
+    justify-content: space-between;
+
+
+    align-items: center;
+    padding: 0px;
+
+}
+
+.footer__img{
+    height: 82px;
+    width: 92px;
+    justify-self: start;
+}
+.footer__icon{
+    height: 35px;
+}
+
+.footer__hr{
+    width: 65%;
+    border: 1px solid var(--color-brown-700);    
+}
+
+.footer__text{
+    font-size: var(--font-text);
+    justify-self: end;
+}
+
+.footer__links{
+    align-items: center;
+    justify-self: center;
+}
+
+.footer__inf-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

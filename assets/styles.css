@@ -1,0 +1,401 @@
+body{
+    
+    background-image: url(./images/Home/imagem\ de\ fundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container{
+    margin-top: 170px;
+    display: grid;
+    grid-auto-rows: 130px
+    
+}
+
+.tittle_one{
+    font-size: 3.5rem;    
+}
+
+#botao1, #botao2{
+    border: none;
+    width: 250px;
+    height: 100px;
+    border-radius: 61px   61px;
+    visibility: visible;
+    background-color: #FED774;
+}
+
+.geometric{
+    position: relative;
+    z-index: -1;
+    background-color: #FED774;
+    width: 250px;
+    height: 100px;
+    border-radius: 60px   60px;
+}
+
+.name{
+    position: absolute;
+    visibility: visible;
+    font-weight: bold;
+    font-size: 1.5rem;
+    height: 5px;
+    margin-left: 100px;
+    margin-top: -65px;
+    color: black;
+}
+
+
+
+.img{
+    position: absolute;
+    visibility: visible;
+    left: 360px;
+    margin-top: -73px;
+}
+
+.sub_name{
+    visibility: hidden;
+    position: absolute;
+    color: #FED774;
+    font-size: 1.5rem;
+    padding-left: 35px;
+    margin-top: -65px;  
+}
+
+.teste:hover .sub_name{
+    visibility: visible;
+}
+
+#botao1:hover {
+    background-color: #4A1F08;
+    cursor: pointer;
+}
+
+#botao2:hover {
+    background-color: #4A1F08;
+    cursor: pointer;
+}
+
+.teste:hover .name{
+    visibility: hidden;
+}
+
+.teste:hover .img{
+    visibility: hidden;
+}
+
+/* Css do botão cadastre-se*/
+
+.second_container{
+    display: grid;
+    grid-auto-rows: 150px
+    
+}
+
+.second_geometric{
+    position: relative;
+    z-index: -1;
+    background-color: #FED774;
+    width: 250px;
+    height: 100px;
+    border-radius: 60px   60px;
+}
+
+#botao3{
+    border: none;
+    width: 250px;
+    height: 100px;
+    border-radius: 61px   61px;
+    visibility: visible;
+    background-color: #FED774;
+}
+
+.second_name{
+    position: absolute;
+    visibility: visible;
+    font-weight: bold;
+    font-size: 1.5rem;
+    height: 5px;
+    margin-left: 95px;
+    margin-top: -65px;
+    color: black;
+}
+
+
+
+.second_img{
+    position: absolute;
+    visibility: visible;
+    left: 360px;
+    margin-top: -80px;
+}
+
+.second_sub_name{
+    visibility: hidden;
+    position: absolute;
+    color: #FED774;
+    font-size: 1.5rem;
+    padding-left: 32px;
+    margin-top: -142px;  
+}
+
+.second_teste:hover .second_sub_name{
+    visibility: visible;
+}
+
+#botao3:hover {
+    background-color: #4A1F08;
+    cursor: pointer;
+    height: 200px;
+}
+
+.second_teste:hover .second_name{
+    visibility: hidden;
+}
+
+.second_teste:hover .second_img{
+    visibility: hidden;
+}
+
+
+
+#eti{
+    position: absolute;
+    margin-top: 200px;
+    margin-left: -60px; 
+    background-color: #FFC700;
+    width: 130px;
+    height: 30px;
+    border-top-left-radius: -20px;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: -20px;
+    border-bottom-left-radius: 150px;
+    border: #FED774;
+    font-size: 1.20rem;
+
+}
+
+
+#eti:hover {
+    transform: scale(2); transition: 0.7s ease-in-out;
+    animation-iteration-count: infinite;
+    
+}
+
+
+
+
+/* Css da parte direita*/
+
+
+.right_part{
+    margin-left: 750px;
+    position: relative; top: -465px; 
+}
+
+
+
+
+.tittle_carousel{
+    font-size: 3.25rem;
+    
+}
+
+.slider{
+    padding-top: 30px;
+    width: 700px;
+    height: 550px;
+    overflow: hidden;  
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex; 
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 50%;
+    
+}
+
+.slide img{
+    width: 400px;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 400px;
+    margin-top: -160px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #FED774;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -100%;
+}
+
+/* 
+.navigation-auto div{
+    border: white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+
+
+.navigation-auto{
+    position: absolute;
+    width: 700px;
+    margin-top: 242px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.navigation-auto div:not(:last-child){
+    margin-right: -100px;
+
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #FED774;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #FED774;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #FED774;
+}
+
+*/
+
+
+.second_tittle{
+    font-weight: bold;
+    position: absolute;
+    margin-top: -590px;
+    margin-left: 220px; 
+    color: #FFFFFF;
+    font-size: 3.25rem;
+    
+
+}
+
+
+.geometric_two{
+    position: absolute;
+    margin-top: -500px;
+    margin-left: 100px; 
+    background-color: #FED774;
+    width: 470px;
+    height: 100px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 0px;
+    border: #FED774;
+    font-size: 1.5rem;
+}
+
+.word_bottom{
+    color: #4A1F08;
+    font-size: 3.25rem;
+    padding-top: 15px;
+    font-weight: 200
+    
+}
+
+
+.text_bottom{
+    position: absolute;
+    padding-top: -350px;
+    color: #FFFFFF;
+}
+
+
+
+
+.linha-vertical {
+    position: absolute;
+    height: 500px;
+    margin-top: -590px;
+    margin-left: 620px;
+    border-left: 2px solid #FFFFFF
+    
+  }
+
+.tittle_map{
+    font-weight: bold;
+    position: absolute;
+    margin-top: -590px;
+    margin-left: 750px; 
+    color: #FFFFFF;
+    font-size: 3.25rem;
+}
+
+.map{
+    font-weight: bold;
+    position: absolute;
+    margin-top: -500px;
+    margin-left: 650px; 
+    color: #FFFFFF;
+    font-size: 3.25rem;
+    height: 410px;
+    width: 520px;
+    border-radius: 20px;
+    
+}
+
+.leia_mais{
+    position: absolute;
+    margin-top: -70px;
+    margin-left: 280px; 
+    background-color: #FED774;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    
+}
+
+.word_mini_bottom{
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #4A1F08;
+}
+
