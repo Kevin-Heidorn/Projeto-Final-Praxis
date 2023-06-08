@@ -1,0 +1,53 @@
+body{
+    background-image: url(./images/cadastro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1{
+    text-align: left;
+    color: var(--color-white-100);
+    font-size: 4rem;
+    width: 60%;
+}   
+
+.hr{
+    border: 2px solid var(--color-white-100);
+    width: 100%;
+    
+}
+
+.sign-up-finished{
+    margin-top: calc(var(--nav-height) * 2 + (150px));
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin-bottom: 201px;
+}
+
+
+/* vvv  responsividade  vvv */
+@media(max-width: 1090px){
+    h1{
+        width: 65%;
+    }
+}
+
+@media(max-width: 1010px){
+    h1{
+        width: 100%;
+    }
+}
+
+@media(max-width: 880px){
+    h1{
+        font-size: 3rem;
+    }
+}
+
+@media(max-width: 500px){
+    h1{
+        font-size: 2rem;
+    }
+}
