@@ -41,31 +41,10 @@ html {
     --footer-height:160px;
 
     --font-text: 1.5rem;
-    --font-h1:2.25rem;
+    --font-h1: 2.25rem;
 }
 
 
-
-/* mudei o tamanho da fonte, por que achei a outra muito pequena... pode trocar se quiser*/
-.tittle{
-    font-size: 3.25rem;
-    margin-top: var(--nav-height);
-    padding-top: 100px;
-    
-    
-    display: flex;
-    justify-content: center;
-    align-items: flex-start
-    
-}
-
-.tittle_hr{
-    
-    margin-left: 245px;
-    width: 700px;
-    border: 1px solid var(--color-brown-700);  
-    
-}
 
 
 /* imagem de fundo */
@@ -80,62 +59,77 @@ body{
 
 /* configuração dos argumentos em <p></p> */
 p{
-    margin-left: 50px;
     font-size: 1.5rem;
-    color:#2D1305;;
+    color:var(--color-brown-900);;
 }
 
 /* Css fundadores */
-.founders{
-   margin-top: 200px;
-}
 
+.section{
+    font-size: 2rem;
+    color: var(--color-brown-700);
 
-.tittle_founders{
-    font-size: 2.50rem;
-    
-}
-
-
-.img_founders{
-    padding-top: 50px;
     display: flex;
-    
+    flex-direction: column;
+    gap: 40px;
 }
 
-
-/* Css local */
-
-.local{
-     margin-top: 400px;
-}
-
-.tittle_local{
- font-size: 2.50rem;
-
-}
-
-.img_local{
-    padding-top: 50px;
+.section__content{
     display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 40px;
     
+    color: var(--color-brown-900);
+    text-align: justify;
 }
 
-/* Css missão */
-.mission{
-    margin-top: 400px;
+.section__content img{
+    height: 350px;
 }
 
-.tittle_mission{
-font-size: 2.50rem;
+
+
+
+
+
+h1{
+    text-align: center;
+    font-size: 4rem;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
 
 }
 
-.img_mission{
-   padding-top: 50px;
-   display: flex;
-   
+.page-div{
+    height: 2px;
+    width: 65%;
+    background-color: var(--color-brown-700);
 }
+
+.layout{
+    margin-top: calc(var(--nav-height) * 2);
+
+    display: flex;
+    flex-direction: column;
+    gap: 130px;
+}
+
+
+
+
+
+
+
+
+
 
 /* Css footer */
 
@@ -181,4 +175,42 @@ font-size: 2.50rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+
+
+/* vvv  responsividade  vvv */
+@media(max-width: 1200px){
+    .section__content{
+        gap: 15px;
+    }
+
+    .section__content img{
+        height: 350px;
+    }
+
+}
+
+@media(max-width: 1000px){
+    .section{
+        align-items: center;
+    }
+    .section__content{
+        flex-direction: column;
+    }
+    .section__content img{
+        height: 80%;
+    }
+    .section__content p{
+        width: 90%;
+    }
+}
+
+@media(max-width: 610px){
+    .section__content img{
+        height: 350px;
+    }
+    .section__content p{
+        width: 90%;
+    }
 }

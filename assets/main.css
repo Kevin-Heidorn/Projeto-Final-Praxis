@@ -296,7 +296,7 @@ footer{
     .footer__icon{
         height: 20px;
     }
-    .footer__text{
+    .footer__text p{
         font-size: var(--font-text-mob);
     }
     .footer__cp{
@@ -352,6 +352,9 @@ footer{
 
     .dropdown__btn{
         display: block;
+    }
+    .footer__text p{
+        font-size: 1rem;
     }
 
 }
