@@ -11,18 +11,30 @@
     <title>Sobre nós - Tropicalia</title>
 </head>
 <body>
-    <header class="nav horizontal_padding">
-        <div class="nav__logo">
-            <img class="nav__img" src="./assets/images/site-logo.png" alt="Logo do site">
-            <a class="nav__img-name" href="./index.html">TROPICALIA</a>
-        </div>
-
-        <nav class="nav__bar">
-            <a class="nav__link" href="./cardapio.html">CARDÁPIOS</a>
-            <a class="nav__link" href="./sobre-nos.html">SOBRE NÓS</a>
-            <a class="nav__link" href="./cadastro.html">CADASTRE-SE</a>
-        </nav>
+    <header>
+        <nav class="nav horizontal_padding">
+            <div class="nav__logo">
+                <img class="nav__img" src="./assets/images/site-logo.png" alt="Logo do site">
+                <a class="nav__img-name" href="./index.html">TROPICALIA</a>
+            </div>
     
+            <div class="nav__bar">
+                <a class="nav__link" href="./cardapio.html">CARDÁPIO</a>
+                <a class="nav__link" href="./sobre-nos.html">SOBRE NÓS</a>
+                <a class="nav__link" href="./cadastro.html">FAÇA A SUA RESERVA</a>
+
+
+
+                
+                <img class="pointer dropdown__btn" onclick="dropdownMenu()" src="./assets/images/menu-btn.png" height="50px" alt="">
+            </div>
+
+        </nav>
+        <div id="dropdown__nav" class="dropdown__nav hide">
+            <a href="./cardapio.html">CARDÁPIO</a>
+            <a href="./sobre-nos.html">SOBRE NÓS</a>
+            <a href="./cadastro.html">RESERVA</a>
+        </div>
     </header>
     
 
@@ -104,5 +116,7 @@
             <p class="footer__cp">Copyright © 2023 Tropicalia - Todos os direitos reservados</p>
         </div>
     </footer>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>

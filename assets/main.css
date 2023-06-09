@@ -37,6 +37,7 @@ html {
 
     --color-blue-500:#24A9E1;
 
+    --color-black-100: black;
     --color-white-100:#FFFFFF;
     
     --horizontal-padding: calc((100vw - 1200px) / 2);
