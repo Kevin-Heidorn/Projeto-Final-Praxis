@@ -21,3 +21,6 @@ function toggleQrCode(){
     qr.classList.toggle('hide')
 
 }
+
+// const btnSubmit = document.getElementById('btn__submit')
+// btnSubmit.addEventListener('click', window.location.href = "https://cldeqtn.github.io/Projeto-Final-Praxis/cadastro-sucesso.html")
